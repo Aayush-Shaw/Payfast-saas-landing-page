@@ -1,5 +1,9 @@
 # Payfast
 
+> [!WARNING]
+> 🚧 **UNDER CONSTRUCTION** 🚧
+> This repository is currently under active development. Features, design, and architecture are subject to change.
+
 A SaaS landing page designed professionally through detailed UI/UX research. Built with enterprise-grade architecture using **Next.js 16**, **Tailwind CSS v4**, and **TypeScript** to deliver a highly optimized, fully responsive, and intuitive user experience.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
