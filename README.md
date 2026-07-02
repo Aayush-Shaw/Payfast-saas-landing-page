@@ -66,8 +66,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/payfast-landing-page.git
-   cd payfast-landing-page
+   git clone https://github.com/Aayush-Shaw/Payfast-saas-landing-page
+   cd Payfast-saas-landing-page
    ```
 
 2. **Install dependencies**
