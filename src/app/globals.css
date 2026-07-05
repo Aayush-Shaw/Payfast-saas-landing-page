@@ -118,19 +118,7 @@ body {
     50% { transform: scale(1.25); opacity: 0.5; }
 }
 
-.nav-pill {
-    background: transparent;
-    border: 1px solid transparent;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    transition: all 0.3s ease;
-}
 
-#navbar.scrolled .nav-pill {
-    background: rgba(255, 255, 255, 0.03);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-}
 
 .grid-pattern {
     background-image: 
