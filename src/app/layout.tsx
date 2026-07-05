@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${dmSans.variable} h-full antialiased`}>
-      <body className="relative min-h-full flex flex-col bg-[#0A0A0A] text-white font-sans">
+      <body className="grid-pattern relative min-h-full flex flex-col bg-[#0A0A0A] text-white font-sans">
         <BackgroundGlow />
         <Navbar />
         {children}
