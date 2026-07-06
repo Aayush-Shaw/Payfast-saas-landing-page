@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
@@ -37,25 +38,16 @@ export default function Navbar() {
       >
         <div className={`flex items-center justify-between transition-all duration-300 ${mobileMenuOpen ? 'p-0.5' : ''}`}>
           {/* Logo Pill */}
-          <div className={`flex items-center gap-1.5 px-1.5 py-1.5 rounded-full transition-all duration-300 border ${
+          <Link href="/" className={`flex items-center gap-1.5 px-1.5 py-1.5 rounded-full transition-all duration-300 border ${
             mobileMenuOpen 
               ? 'border-transparent bg-transparent' 
               : `border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent'}`
           }`}>
-            <div className="w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#0a0a0a"
-                strokeWidth="3"
-              >
-                <path d="M12 2v20M2 12h20" />
-              </svg>
+            <div className="w-7 h-7 bg-lime rounded-full flex items-center justify-center">
+              <Image src="/Payfast-logo.svg" alt="Payfast Logo" width={20} height={20} className="w-5 h-5" />
             </div>
             <span className="font-semibold text-2xl leading-none pr-1.5 text-white">Payfast</span>
-          </div>
+          </Link>
 
           {/* Desktop Nav Links Pill */}
           <div className={`hidden md:flex items-center gap-1 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
@@ -70,7 +62,7 @@ export default function Navbar() {
           {/* Desktop Auth Pill */}
           <div className={`hidden md:flex items-center gap-2 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
             <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors px-4 font-medium">Log in</Link>
-            <button className="bg-lime-400 text-black text-sm font-semibold px-5 py-2 rounded-full hover:bg-lime-500 transition-colors">Sign up</button>
+            <button className="bg-lime text-black text-sm font-semibold px-5 py-2 rounded-full hover:bg-lime/90 transition-colors">Sign up</button>
           </div>
 
           {/* Mobile Right Pill (Login + Hamburger) */}
@@ -99,12 +91,12 @@ export default function Navbar() {
           }`}
         >
           <div className="grid grid-cols-3 gap-y-6 gap-x-2 px-6">
-            <Link href="#" className="text-center text-sm font-medium text-white hover:text-lime-400 transition-colors">Home</Link>
-            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime-400 transition-colors">Activity</Link>
-            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime-400 transition-colors">Manage</Link>
-            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime-400 transition-colors">Program</Link>
-            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime-400 transition-colors">Folders</Link>
-            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime-400 transition-colors">Documents</Link>
+            <Link href="#" className="text-center text-sm font-medium text-white hover:text-lime transition-colors">Home</Link>
+            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime transition-colors">Activity</Link>
+            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime transition-colors">Manage</Link>
+            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime transition-colors">Program</Link>
+            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime transition-colors">Folders</Link>
+            <Link href="#" className="text-center text-sm font-medium text-gray-300 hover:text-lime transition-colors">Documents</Link>
           </div>
         </div>
       </div>
