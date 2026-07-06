@@ -38,10 +38,10 @@ const lufga = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Payfast | Take Control of Your Finances",
+  title: "Payfast | AI-Powered Global Payments | Instant, Secure, and Borderless | Start Free",
   description:
-    "The all-in-one financial platform that helps you track, manage, and grow your money. Powered by smart analytics and built for the modern world.",
-  keywords: ["fintech", "finance", "banking", "payments", "analytics"],
+    "Payfast: The AI-powered global payments platform. Send and receive money instantly, securely, and with no hidden fees. Trusted by individuals and businesses worldwide. Start for free today!",
+  keywords: ["AI payments", "global payments", "instant payments", "secure money transfer", "borderless payments", "fintech", "online payments", "business payments", "payfast"],
 };
 
 export default function RootLayout({
