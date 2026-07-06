@@ -32,7 +32,7 @@ export default function Navbar() {
       <div 
         className={`max-w-7xl mx-auto transition-all duration-500 overflow-hidden ${
           mobileMenuOpen 
-            ? "bg-black/5 backdrop-blur-md border border-white/10 rounded-4xl shadow-2xl" 
+            ? "bg-background/5 backdrop-blur-md border border-white/10 rounded-4xl shadow-2xl" 
             : "bg-transparent border border-transparent rounded-4xl"
         }`}
       >
@@ -41,7 +41,7 @@ export default function Navbar() {
           <Link href="/" className={`flex items-center gap-1.5 px-1.5 py-1.5 rounded-full transition-all duration-300 border ${
             mobileMenuOpen 
               ? 'border-transparent bg-transparent' 
-              : `border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent'}`
+              : `border-white/10 ${scrolled ? 'bg-background/20 backdrop-blur-md' : 'bg-transparent'}`
           }`}>
             <div className="w-7 h-7 bg-lime rounded-full flex items-center justify-center">
               <Image src="/Payfast-logo.svg" alt="Payfast Logo" width={20} height={20} className="w-5 h-5" />
@@ -50,7 +50,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav Links Pill */}
-          <div className={`font-inter font-light hidden md:flex items-center gap-1 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
+          <div className={`font-inter font-light hidden md:flex items-center gap-1 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-background/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
             <Link href="#" className="bg-white/10 text-white px-5 py-2 rounded-full transition-colors text-sm">Home</Link>
             <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Activity</Link>
             <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Manage</Link>
@@ -60,16 +60,16 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Auth Pill */}
-          <div className={`hidden font-regular md:flex items-center gap-2 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
+          <div className={`hidden font-regular md:flex items-center gap-2 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-background/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
             <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors px-4">Log in</Link>
-            <button className="bg-lime text-black text-sm px-5 py-2 rounded-full hover:bg-lime/90 transition-colors">Sign up</button>
+            <button className="bg-lime text-background text-sm px-5 py-2 rounded-full hover:bg-lime/90 transition-colors">Sign up</button>
           </div>
 
           {/* Mobile Right Pill (Login + Hamburger) */}
           <div className={`md:hidden flex items-center gap-2 p-2 rounded-full transition-all duration-300 border ${
             mobileMenuOpen 
               ? 'border-transparent bg-transparent' 
-              : `border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent'}`
+              : `border-white/10 ${scrolled ? 'bg-background/20 backdrop-blur-md' : 'bg-transparent'}`
           }`}>
             <Link href="#" className="text-base text-gray-300 hover:text-white px-1 font-medium">
               Log in
