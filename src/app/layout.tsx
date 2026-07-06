@@ -38,7 +38,7 @@ const lufga = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Payfast — Take Control of Your Finances",
+  title: "Payfast | Take Control of Your Finances",
   description:
     "The all-in-one financial platform that helps you track, manage, and grow your money. Powered by smart analytics and built for the modern world.",
   keywords: ["fintech", "finance", "banking", "payments", "analytics"],

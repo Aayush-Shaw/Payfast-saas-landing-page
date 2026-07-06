@@ -46,23 +46,23 @@ export default function Navbar() {
             <div className="w-7 h-7 bg-lime rounded-full flex items-center justify-center">
               <Image src="/Payfast-logo.svg" alt="Payfast Logo" width={20} height={20} className="w-5 h-5" />
             </div>
-            <span className="font-semibold text-2xl leading-none pr-1.5 text-white">Payfast</span>
+            <span className="font-medium text-lg leading-none pr-1.5 text-white">Payfast</span>
           </Link>
 
           {/* Desktop Nav Links Pill */}
-          <div className={`hidden md:flex items-center gap-1 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
-            <Link href="#" className="bg-white/10 text-white px-5 py-2 rounded-full transition-colors text-sm font-medium">Home</Link>
-            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm font-medium">Activity</Link>
-            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm font-medium">Manage</Link>
-            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm font-medium">Program</Link>
-            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm font-medium">Folders</Link>
-            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm font-medium">Documents</Link>
+          <div className={`font-inter font-light hidden md:flex items-center gap-1 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
+            <Link href="#" className="bg-white/10 text-white px-5 py-2 rounded-full transition-colors text-sm">Home</Link>
+            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Activity</Link>
+            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Manage</Link>
+            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Program</Link>
+            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Folders</Link>
+            <Link href="#" className="hover:text-white px-5 py-2 text-gray-400 transition-colors text-sm">Documents</Link>
           </div>
 
           {/* Desktop Auth Pill */}
-          <div className={`hidden md:flex items-center gap-2 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
-            <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors px-4 font-medium">Log in</Link>
-            <button className="bg-lime text-black text-sm font-semibold px-5 py-2 rounded-full hover:bg-lime/90 transition-colors">Sign up</button>
+          <div className={`hidden font-regular md:flex items-center gap-2 p-1 rounded-full transition-all duration-300 border border-white/10 ${scrolled ? 'bg-black/20 backdrop-blur-md' : 'bg-transparent border-transparent'}`}>
+            <Link href="#" className="text-sm text-gray-300 hover:text-white transition-colors px-4">Log in</Link>
+            <button className="bg-lime text-black text-sm px-5 py-2 rounded-full hover:bg-lime/90 transition-colors">Sign up</button>
           </div>
 
           {/* Mobile Right Pill (Login + Hamburger) */}
