@@ -2,11 +2,11 @@ import Button from "@/components/ui/Button";
 
 export default function HeroCTAs() {
   return (
-    <div className="mt-5 flex flex-wrap items-center justify-center gap-4">
-      <Button href="/contact" size="md">
+    <div className="mt-8 lg:mt-5 flex flex-wrap items-center justify-center gap-4">
+      <Button href="/contact" size="lg">
         Get Started
       </Button>
-      <Button href="/contact" variant="secondary" size="md">
+      <Button href="/contact" variant="secondary" size="lg">
         Get a Demo
       </Button>
     </div>

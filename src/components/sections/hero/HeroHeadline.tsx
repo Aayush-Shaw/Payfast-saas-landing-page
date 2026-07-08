@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 export default function HeroHeadline() {
   return (
     <div className="flex flex-col items-center text-center">
-      <Badge className="mb-4 flex items-center gap-1">
+      <Badge className="mb-8 lg:mb-4 flex items-center gap-1">
         <span className="text-white flex items-center gap-1 font-normal text-xs">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-3 h-3">
             <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.7 17.74 9.5 24 9.5z"/>
@@ -18,7 +18,7 @@ export default function HeroHeadline() {
         <span className="text-white/50 font-normal text-xs"> · 12k reviews</span>
       </Badge>
 
-      <h1 className="lg:max-w-4xl text-4xl font-medium leading-9 lg:leading-15 tracking-tight text-white sm:text-5xl md:text-4xl lg:text-6xl">
+      <h1 className="lg:max-w-4xl text-6xl font-medium leading-15 lg:leading-15 tracking-tight text-white sm:text-5xl md:text-4xl lg:text-6xl">
         <span className="hidden lg:block">Take Control of Your <br className=" hidden sm:block"/>
         Finances with Payfast</span>
         <span className="block lg:hidden">Control Your Finances <br/>
@@ -26,7 +26,7 @@ export default function HeroHeadline() {
         
       </h1>
 
-      <p className="mt-2 max-w-2xl text-xs text-white/50 leading-4 px-25">
+      <p className="mt-4 lg:mt-2 max-w-2xl text-base lg:text-xs text-white/50 leading-4.5 lg:leading-4 px-5 lg:px-25">
         The all-in-one financial platform that helps you track, manage, and grow
         your money. Powered by smart analytics and built for the modern world.
       </p>
