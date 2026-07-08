@@ -4,12 +4,14 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { name: "Coinmarketcap", icon: "BarChart3" },
-  { name: "WikimediaFn", icon: "Globe" },
-  { name: "GoAustralia", icon: "Map" },
-  { name: "Convergence", icon: "Layers" },
-  { name: "TopCompanies", icon: "Building2" },
-  { name: "CloudConnect", icon: "Cloud" },
-  { name: "ToneAudios", icon: "Music" },
-  { name: "CustomInk", icon: "Palette" },
+  { name: "Ephemeral", icon: "Link2" },
+  { name: "Wildcrafted", icon: "Leaf" },
+  { name: "Codecraft_", icon: "Terminal" },
+  { name: "Convergence", icon: "Sparkles" },
+  { name: "ImgCompress", icon: "Star" },
+  { name: "Epicurious", icon: "GitMerge" },
+  { name: "Watchtower", icon: "CircleDot" },
+  { name: "Renaissance", icon: "Flag" },
+  { name: "ContrastAI", icon: "Circle" },
+  { name: "Nietzsche", icon: "Asterisk" },
 ];

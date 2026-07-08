@@ -10,7 +10,7 @@ import {
 
 function DashboardNav() {
   return (
-    <div className="flex items-center justify-between border-b border-white/[0.06] px-5 py-3">
+    <div className="flex items-center justify-between border-b border-white/6 px-5 py-3">
       <div className="flex items-center gap-3">
         <div className="h-3 w-3 rounded-full bg-red-500/60" />
         <div className="h-3 w-3 rounded-full bg-yellow-500/60" />
@@ -38,10 +38,10 @@ function GreetingBar() {
         </p>
       </div>
       <div className="flex items-center gap-2">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-white/40">
+        <div className="flex h-8 w-8 items-center justify-center rounded-4xl bg-white/5 text-white/40">
           <CreditCard size={14} />
         </div>
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/5 text-white/40">
+        <div className="flex h-8 w-8 items-center justify-center rounded-4xl bg-white/5 text-white/40">
           <Send size={14} />
         </div>
       </div>
@@ -139,9 +139,9 @@ function TransactionRow() {
   return (
     <div className="mt-2 space-y-1 px-5">
       {transactions.map((tx) => (
-        <div key={tx.label} className="flex items-center justify-between rounded-xl bg-white/[0.02] px-3 py-2.5">
+        <div key={tx.label} className="flex items-center justify-between rounded-4xl bg-white/2 px-3 py-2.5">
           <div className="flex items-center gap-3">
-            <div className={`flex h-8 w-8 items-center justify-center rounded-lg ${tx.type === "in" ? "bg-lime/10 text-lime" : "bg-white/5 text-white/40"}`}>
+            <div className={`flex h-8 w-8 items-center justify-center rounded-4xl ${tx.type === "in" ? "bg-lime/10 text-lime" : "bg-white/5 text-white/40"}`}>
               <tx.icon size={14} />
             </div>
             <div>
@@ -160,7 +160,7 @@ function TransactionRow() {
 
 export default function HeroDashboardPreview() {
   return (
-    <div className="relative mt-10 mx-auto w-full max-w-4xl">
+    <div className="relative mt-10 w-full">
       <GlassCard className="overflow-hidden border-white/8 shadow-2xl shadow-black/40">
         <DashboardNav />
         <GreetingBar />
@@ -175,7 +175,7 @@ export default function HeroDashboardPreview() {
 
       {/* Gradient fade-out overlay — dashboard sinks into background */}
       <div
-        className="pointer-events-none absolute inset-0 z-10"
+        className="pointer-events-none absolute inset-0 z-10 rounded-b-4xl"
         style={{
           background:
             "linear-gradient(to bottom, transparent 0%, transparent 10%, #0A0A0A 100%)",

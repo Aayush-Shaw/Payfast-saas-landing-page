@@ -4,22 +4,22 @@ import type { LucideIcon } from "lucide-react";
 
 export default function ClientsStrip() {
   return (
-    <section className="relative py-16 sm:py-20">
+    <section className="relative py-5 sm:py-10">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-center text-lg font-semibold text-white sm:text-xl">
+        <h2 className="text-center text-2xl font-semibold text-white sm:text-4xl">
           Our Recent Clients & Partners
         </h2>
 
-        <div className="mt-10 grid grid-cols-2 gap-6 sm:grid-cols-4 lg:grid-cols-8">
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-14">
           {clients.map((client) => {
             const IconComponent = (LucideIcons as unknown as Record<string, LucideIcon>)[client.icon];
             return (
               <div
                 key={client.name}
-                className="flex flex-col items-center gap-2 opacity-40 transition-opacity duration-300 hover:opacity-70"
+                className="flex items-center gap-2.5 opacity-50 transition-opacity duration-300 hover:opacity-80"
               >
-                {IconComponent && <IconComponent size={22} className="text-white" />}
-                <span className="text-xs font-medium text-white whitespace-nowrap">
+                {IconComponent && <IconComponent size={24} className="text-white/80" />}
+                <span className="text-sm font-semibold text-white whitespace-nowrap">
                   {client.name}
                 </span>
               </div>
