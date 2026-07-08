@@ -4,7 +4,7 @@ import HeroDashboardPreview from "./HeroDashboardPreview";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-8 sm:pt-40 sm:pb-12">
+    <section className="relative overflow-hidden pt-25 pb-8">
       <div className="mx-auto max-w-7xl px-6">
         <HeroHeadline />
         <HeroCTAs />

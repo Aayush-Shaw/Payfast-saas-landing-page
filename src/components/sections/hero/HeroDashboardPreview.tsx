@@ -160,8 +160,8 @@ function TransactionRow() {
 
 export default function HeroDashboardPreview() {
   return (
-    <div className="relative mt-16 mx-auto w-full max-w-4xl">
-      <GlassCard className="overflow-hidden border-white/[0.08] shadow-2xl shadow-black/40">
+    <div className="relative mt-10 mx-auto w-full max-w-4xl">
+      <GlassCard className="overflow-hidden border-white/8 shadow-2xl shadow-black/40">
         <DashboardNav />
         <GreetingBar />
         <div className="grid grid-cols-1 gap-3 px-5 sm:grid-cols-3">
@@ -178,7 +178,7 @@ export default function HeroDashboardPreview() {
         className="pointer-events-none absolute inset-0 z-10"
         style={{
           background:
-            "linear-gradient(to bottom, transparent 0%, transparent 40%, #0A0A0A 100%)",
+            "linear-gradient(to bottom, transparent 0%, transparent 10%, #0A0A0A 100%)",
         }}
       />
     </div>
