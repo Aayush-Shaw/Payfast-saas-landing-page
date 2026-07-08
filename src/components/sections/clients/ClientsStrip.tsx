@@ -6,7 +6,7 @@ export default function ClientsStrip() {
   return (
     <section className="relative py-5 sm:py-10">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="text-center text-2xl font-semibold text-white sm:text-4xl">
+        <h2 className="text-center text-2xl font-medium text-white sm:text-4xl">
           Our Recent Clients & Partners
         </h2>
 

@@ -12,7 +12,7 @@ export default function Badge({ children, className, variant = "default" }: Badg
     <span
       className={cn(
         "inline-flex items-center gap-0 rounded-full px-2 py-1.5 text-xs font-normal",
-        variant === "default" && "bg-white/5 text-white/80 border border-white/10",
+        variant === "default" && "bg-white/5 text-white border border-white/10",
         variant === "lime" && "bg-lime/10 text-lime border border-lime/20",
         className
       )}
