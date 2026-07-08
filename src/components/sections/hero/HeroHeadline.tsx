@@ -18,9 +18,11 @@ export default function HeroHeadline() {
         <span className="text-white/50 font-normal text-xs"> · 12k reviews</span>
       </Badge>
 
-      <h1 className="max-w-4xl text-4xl font-medium leading-15 tracking-tight text-white sm:text-5xl md:text-4xl lg:text-6xl">
-        Take Control of Your <br />
-        Finances with Payfast
+      <h1 className="lg:max-w-4xl text-4xl font-medium leading-9 lg:leading-15 tracking-tight text-white sm:text-5xl md:text-4xl lg:text-6xl">
+        <span className="hidden lg:block">Take Control of Your <br className=" hidden sm:block"/>
+        Finances with Payfast</span>
+        <span className="block lg:hidden">Control Your Finances <br/>
+        with Payfast</span>
         
       </h1>
 
