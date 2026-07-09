@@ -19,7 +19,7 @@ export default function SpendingOverviewSection() {
             <h2 className="text-5xl font-medium text-white sm:text-4xl md:text-5xl">
               Social Media Made Simple
             </h2>
-            <p className="max-w-md mx-auto md:mx-0 text-base text-white/50">
+            <p className="max-w-md mx-auto md:mx-0 text-base text-white/50 leading-5">
               Track all your social media spending and revenue in one unified
               dashboard. Get real-time insights and AI-powered recommendations to
               optimize your financial strategy.
@@ -31,13 +31,13 @@ export default function SpendingOverviewSection() {
             <div className="grid grid-cols-2 gap-6">
               <div>
                 <p className="text-5xl font-medium text-white">100%</p>
-                <p className="mt-1 text-sm text-white/40">
+                <p className="mt-1 text-sm text-white/40 leading-4">
                   Increase in Progress Tracking
                 </p>
               </div>
               <div>
                 <p className="text-5xl font-medium text-white">122+</p>
-                <p className="mt-1 text-sm text-white/40">
+                <p className="mt-1 text-sm text-white/40 leading-4">
                   Countries Service Available
                 </p>
               </div>
