@@ -49,6 +49,14 @@
   animation: glow-pulse 10s ease-in-out infinite;
 }
 
+@utility scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 /* ===== Base Styles ===== */
 * {
   box-sizing: border-box;

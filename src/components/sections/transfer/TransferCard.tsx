@@ -144,7 +144,7 @@ function DottedWorldMap() {
 /* ── main card ────────────────────────────────────────────────── */
 export default function TransferCard() {
   return (
-    <GlassCard className="relative overflow-hidden p-0 h-full">
+    <GlassCard className="relative overflow-hidden p-0 h-full min-h-[420px]">
       {/* Dotted world map */}
       <DottedWorldMap />
 

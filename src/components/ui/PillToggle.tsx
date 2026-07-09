@@ -13,7 +13,7 @@ export default function PillToggle({ options, activeIndex, onChange, className }
   return (
     <div
       className={cn(
-        "inline-flex items-center rounded-full border border-white/10 bg-white/5 p-1",
+        "inline-flex items-center rounded-full border border-white/10 bg-white/5",
         className
       )}
     >
