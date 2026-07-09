@@ -190,7 +190,7 @@ export default function TransferCard() {
       </div>
 
       {/* ── Lime bank transfer card (upper-right) ── */}
-      <div className="absolute top-6 right-6 z-20 w-[55%] max-w-[260px] rounded-2xl bg-lime p-5 shadow-[0_20px_60px_rgba(198,241,53,0.15)]">
+      <div className="absolute top-6 right-6 z-20 w-[55%] max-w-[260px] rounded-4xl bg-lime p-5 shadow-[0_20px_60px_rgba(198,241,53,0.15)]">
         {/* Header row */}
         <div className="flex items-center justify-between mb-4">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-sm">
