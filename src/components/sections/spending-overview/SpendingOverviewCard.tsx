@@ -33,7 +33,7 @@ export default function SpendingOverviewCard() {
       <p className="text-xs text-white/30 mb-6">vs. $20,480.00 last month</p>
 
       {/* Progress bar */}
-      <div className="flex gap-1 mb-6 h-2.5 rounded-full overflow-hidden">
+      <div className="flex gap-1 mb-6 h-3.5 rounded-full overflow-hidden">
         {spendingCategories.map((cat) => (
           <div
             key={cat.label}
@@ -44,7 +44,7 @@ export default function SpendingOverviewCard() {
       </div>
 
       {/* Legend */}
-      <div className="flex-1 min-h-0 overflow-hidden space-y-3">
+      <div className="flex-1 min-h-0 hidden lg:block overflow-hidden space-y-3">
         {spendingCategories.map((cat) => (
           <div key={cat.label} className="flex items-center justify-between">
             <div className="flex items-center gap-2">

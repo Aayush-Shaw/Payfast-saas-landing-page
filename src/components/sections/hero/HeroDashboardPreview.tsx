@@ -137,7 +137,7 @@ function TransactionRow() {
   ];
 
   return (
-    <div className="mt-2 space-y-1 px-5">
+    <div className="hidden md:block mt-2 space-y-1 px-5">
       {transactions.map((tx) => (
         <div key={tx.label} className="flex items-center justify-between rounded-4xl bg-white/2 px-3 py-2.5">
           <div className="flex items-center gap-3">
@@ -170,7 +170,7 @@ export default function HeroDashboardPreview() {
           <QuickTransfer />
         </div>
         <TransactionRow />
-        <div className="h-10" />
+        
       </GlassCard>
 
       {/* Gradient fade-out overlay — dashboard sinks into background */}

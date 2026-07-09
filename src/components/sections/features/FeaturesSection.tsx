@@ -5,14 +5,14 @@ import { features } from "@/lib/data/features";
 
 export default function FeaturesSection() {
   return (
-    <section id="features" className="relative pt-5 sm:pt-10">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="text-center md:mb-10">
-          <Badge variant="lime" className="mb-5">Features</Badge>
-          <h2 className="text-3xl font-medium text-white sm:text-4xl md:text-5xl">
+    <section id="features" className="relative py-5 sm:py-10">
+      <div className="mx-auto max-w-7xl px-2 md:px-6">
+        <div className="flex flex-col items-center text-center gap-6">
+          <Badge variant="lime" className="">Features</Badge>
+          <h2 className="text-5xl font-medium text-white sm:text-4xl md:text-5xl">
             Banking Reimagined<br className="hidden sm:block" /> for the Future You
           </h2>
-          <p className="mx-auto px-10 mt-5 max-w-2xl text-base text-white/50 leading-5">
+          <p className="mx-auto px-10 max-w-2xl text-base text-white/50 leading-5">
             Experience next-generation financial tools designed with cutting-edge technology and intuitive design to simplify your financial life.
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function FeaturesSection() {
         </div>
 
         {/* Desktop: grid layout */}
-        <div className="hidden md:grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="hidden md:grid grid-cols-1 gap-5 mt-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <FeatureCard key={feature.title} feature={feature} />
           ))}

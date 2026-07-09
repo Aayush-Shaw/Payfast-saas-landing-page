@@ -5,12 +5,12 @@ import type { LucideIcon } from "lucide-react";
 export default function ClientsStrip() {
   return (
     <section className="relative py-5 sm:py-10">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-2 md:px-6">
         <h2 className="text-center text-2xl font-medium text-white sm:text-4xl">
           Our Recent Clients & Partners
         </h2>
 
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-x-10 gap-y-6 sm:gap-x-14">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-x-15 gap-y-6 sm:gap-x-14">
           {clients.map((client) => {
             const IconComponent = (LucideIcons as unknown as Record<string, LucideIcon>)[client.icon];
             return (
@@ -27,7 +27,7 @@ export default function ClientsStrip() {
           })}
         </div>
 
-        <p className="mt-8 text-center text-xs text-white/30">
+        <p className="mt-4 md:mt-6 text-center text-xs text-white/30">
           Join 4,000+ companies already growing
         </p>
       </div>

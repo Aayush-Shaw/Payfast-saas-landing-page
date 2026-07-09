@@ -26,7 +26,7 @@ export default function HeroHeadline() {
         
       </h1>
 
-      <p className="mt-4 lg:mt-2 max-w-2xl text-base lg:text-xs text-white/50 leading-4.5 lg:leading-4 px-5 lg:px-25">
+      <p className="mt-4 lg:mt-2 max-w-2xl text-base text-white/50 leading-4.5 lg:leading-4 px-5 lg:px-25">
         The all-in-one financial platform that helps you track, manage, and grow
         your money. Powered by smart analytics and built for the modern world.
       </p>
